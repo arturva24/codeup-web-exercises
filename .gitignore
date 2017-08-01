@@ -1,2 +1,5 @@
 .idea
 *.iml
+
+#this will ignore the .DS_Store file anywhere in your file system
+**/.DS_Store
