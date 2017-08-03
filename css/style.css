@@ -1,3 +1,26 @@
 .fancy-header {
-    color: red;
+    color: purple;
+    text-align: center
+}
+
+body {
+    background-image: url(../images/fresh_snow.png);
+    font-family: 'Julee', cursive;
+}
+
+h2, h3 {
+    text-decoration: underline;
+    color: darkblue;
+}
+
+ul {
+    list-style-type: square;
+}
+
+td, tr, th {
+    padding: 10px;
+}
+
+h3:hover {
+    background-color: red;
 }
