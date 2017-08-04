@@ -5,6 +5,7 @@
 
 body {
     background-image: url(../images/fresh_snow.png);
+
     font-family: 'Julee', cursive;
 }
 
@@ -17,10 +18,22 @@ ul {
     list-style-type: square;
 }
 
-td, tr, th {
+td, th {
     padding: 10px;
 }
 
 h3:hover {
     background-color: red;
+}
+
+header {
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+
 }
