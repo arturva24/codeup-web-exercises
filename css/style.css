@@ -32,8 +32,8 @@ header {
 
 .fixed {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 100px;
+    right: 100px;
     width: 200px;
 
 }
