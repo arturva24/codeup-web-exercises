@@ -33,40 +33,47 @@ body {
 }
 
 .one-half {
-    border: 1px solid black;
+
     width: 50%;
     float: left;
-    background-color: red;
+
 
 }
 
 .one-third {
-    border: 1px solid black;
+
     width: 33.33%;
     float: left;
-    background-color: blue;
+
 
 }
 
 .one-fourth {
-    border: 1px solid black;
+
     width: 25%;
     float: left;
-    background-color: green;
+
 
 }
 
 .one-sixth {
-    border: 1px solid black;
+
     width: 16%;
     float: left;
 
 }
 
 .one-eight {
-    border: 1px solid black;
+
     width: 12.5%;
     float: left;
-    background-color: yellow;
 
+
+}
+
+@media screen and (min-width: 360px) {
+    .fullsize-small {
+        float: left;
+        width: 100%;
+    }
 }
