@@ -1,9 +1,13 @@
+body {
+    background-color: dimgrey;
+}
 #wrap {
     width: 750px;
     margin: 0 auto;
     background-color: #999F8E;
     border: 10px solid white;
     outline: 1px solid black;
+
 }
 
 h1 {

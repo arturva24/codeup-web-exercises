@@ -1,0 +1,72 @@
+html,
+body {
+    box-sizing:border-box;
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    padding: 10px;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    width:100%;
+    margin-bottom: 5px;
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.one-half {
+    border: 1px solid black;
+    width: 50%;
+    float: left;
+    background-color: red;
+
+}
+
+.one-third {
+    border: 1px solid black;
+    width: 33.33%;
+    float: left;
+    background-color: blue;
+
+}
+
+.one-fourth {
+    border: 1px solid black;
+    width: 25%;
+    float: left;
+    background-color: green;
+
+}
+
+.one-sixth {
+    border: 1px solid black;
+    width: 16%;
+    float: left;
+
+}
+
+.one-eight {
+    border: 1px solid black;
+    width: 12.5%;
+    float: left;
+    background-color: yellow;
+
+}
