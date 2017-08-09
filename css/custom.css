@@ -1,39 +1,10 @@
-.jumbotron {
-
+.pizza {
+    background-image:url("../images/pizza.png");
 }
 
 h1 {
-
-}
-
-.nav {
-
-}
-
-.nav-tabs {
-
-}
-
-.disabled {
-
-}
-
-.radio {
-
-}
-
-.radio-inline {
-
-}
-
-.checkbox {
-
-}
-
-.checkbox-inline {
-
-}
-
-.button {
-
+    text-align: center;
+    border: 1px solid black;
+    opacity: .7;
+    background-color: white;
 }
