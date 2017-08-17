@@ -28,4 +28,3 @@ do {
 //     Yay! I sold them all! // If there are no more cones
 
 
-//EXERCISE 3
