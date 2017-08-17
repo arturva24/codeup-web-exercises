@@ -13,12 +13,12 @@
 
 
 
-// loop exercise 3
+// Loop Exercise 3
 
 // var limit = 10;
 //
 // for (var z = 1; z < limit; z++) {
-// var randNum = Math.floor(Math.random() * (200 - 20)) + 20;
+// var randNum = Math.floor(Math.random() * 180) + 20;
 //
 //     if (randNum % 2 === 0) {
 //         console.log("This is an even number: " + randNum);
@@ -36,6 +36,8 @@
 //
 // }
 
-for (var a = 100; a <= 20; a-- ) {
+// Exercise 5
+
+for (var a = 100; a > 0; a -= 5 ) {
     console.log(a);
 }
