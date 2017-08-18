@@ -8,6 +8,10 @@
     var names = ["art", "alex", "andy", "erik", "ram"];
 
 
+    // Fernando's alternate version to add new arrays
+    // var names = new Array("fer", "luis", "ryan", "zach");
+
+
     // TODO: Create a log statement that will log the number of elements in the names array.
 
     console.log(names.length);
