@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -75,7 +73,7 @@ isOdd(random);
 
 // var total = 20
 var bill= prompt ("What was the total for your bill?");
-var tipAmount= prompt("How much would you like to tip");
+var tipAmount= prompt("What percentage would you like to tip?");
 
 
 function calculateTip(tip) {
