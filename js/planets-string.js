@@ -35,4 +35,6 @@
 
 
     console.log(ul);
+
+    document.body.innerHTML= ul;
 })();
