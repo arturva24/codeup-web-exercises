@@ -25,7 +25,14 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+   <!--//button for js is cool-->
+    <button id="cool">Try Me!</button>
+    <button id="listBtn">Im Next!</button>
+    <button id="subBtn">Now Me!</button>
+    <button id="done">Last One!!</button>
 <script>
+
+
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
@@ -33,14 +40,22 @@
          console.log(mainHeader);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerHTML = "JavaScript is Cool";
+        cool.addEventListener("click", function() {
+            mainHeader.innerHTML = "<marquee>JavaScript is Cool</marquee>";
+            mainHeader.style.color = "red";
+
+
+        });
 
         // TODO: Uncomment the next line and get the sub header element by id
          var subHeader = document.getElementById("sub-header");
          console.log(subHeader);
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = "#0000FF";
+        subBtn.addEventListener("click", function() {
+            subHeader.style.color = "#0000FF";
+
+        });
 
 
         // TODO: Uncomment the next line and get all list items
@@ -54,19 +69,25 @@
 
 
         // TODO: Set text color of li with dbid = 1 to blue
+        listBtn.addEventListener("click", function() {
+
         for (var i = 0; i < listItems.length; i++) {
             var id = listItems[i].getAttribute("data-dbid");
             if(id === "1") {
                 listItems[i].style.color = "#0000ff";
             }
         }
+        });
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
          var subParagraphs = document.getElementsByClassName("sub-paragraph");
          console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+        done.addEventListener("click", function () {
         subParagraphs[0].innerHTML = "Mission Accomplished!";
+
+        })
     })();
 </script>
 </body>
