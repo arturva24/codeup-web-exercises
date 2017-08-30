@@ -2,7 +2,7 @@
 
 (function () {
     var mapOptions = {
-        zoom: 19,
+        zoom: 18,
 
         center: {
             lat: 29.5924,
@@ -34,11 +34,27 @@
     var marker = new google.maps.Marker({
         position: pfChangs,
         map: map
-    })
+    });
 
     var infowindow = new google.maps.InfoWindow({
-        content: "My favorite place with the Wife"
-    })
+        content: "<strong>My favorite place with the Wife</strong>"
+
+    });
 
     infowindow.open(map, marker);
+
+    var konaGrill = { lat: 29.5923, lng: -98.6138 };
+
+    var marker2= new google.maps.Marker({
+        position: konaGrill,
+        map: map
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+        content: "<em>Great Sake Bombs</em>"
+    });
+
+    infowindow.open(map, marker2);
+
 })();
+
