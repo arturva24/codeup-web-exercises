@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <h1 id="pageTitle">JQUERY Page</h1>
+        <div class="important">
+            <h3>NOTICE</h3>
+            <p>This is an exercise for JQUERY!</p>
+        </div>
+        <div class="not-important">
+            <h2>Lorem Ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.
+            </p>
+        </div>
+        <p class="important">This class starts at 9 am.  Make sure to be here on time.</p>
+
+        <ul id="whatColor"> What color is your cup right now?
+            <li>red</li>
+            <li>yellow</li>
+            <li>green</li>
+        </ul>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+        <script>
+            "use strict";
+//            $(document).ready(function() {
+//                alert("Hi there");
+//            });
+            var title = $("#pageTitle").html();
+            alert("This is the start of the page.");
+
+            $("#whatColor");
+            $(".important").css("color", "red");
+            $("p").css("font-size", "20px");
+
+
+        </script>
+    </body>
+</html>
