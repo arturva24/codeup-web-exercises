@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ of National Parks</title>
+</head>
+<body>
+
+<div id="register" class="invisible">
+    <h2>Register</h2>
+    <a href="#">Register</a>
+</div>
+
+<div id="letsHide">
+    <h1>"Would you like to sign up for our newsletter?"</h1>
+    <span >x</span>
+
+</div>
+
+
+    <h3 id="header">10 FAQs about National Parks</h3>
+<ul class="invisible">
+    <li>  As you may know, the National Park Service sets aside land for all of us to enjoy in its natural state.
+        How much, you ask? 51 million acres! About the size of Kansas.</li>
+    <li>The world’s first national park, Yellowstone, was created in 1872 by
+        Ulysses S. Grant. Its caretakers – the cavalry.</li>
+    <li>Wind Cave National Park is the first cave to be named a national park in the world. In addition to its length
+        (currently sixth longest in the world), Wind Cave is known for its calcite formations known as “boxwork.”
+        About 95% of the world’s boxwork is found in Wind Cave.</li>
+    <li>The smallest national park is Hot Springs National Park in Arkansas coming in at about 5,500 acres.
+        The biggest? Wrangell – St. Elias National Park in Alaska has an area of over 8.3 million acres and is
+        larger than each of the nine smallest states.</li>
+    <li>Sometimes national parks and national monuments are confused. National parks are chosen for their natural beauty,
+        unique geological features, and unusual ecosystems. National monuments are chosen for their historical or
+        archeological significance.</li>
+    <li>Only one state in the country is not lucky enough to currently have either a national park or national monument.
+        It is actually the country’s first state, Delaware. Poor Delaware.</li>
+    <li>Death Valley National Park, which has the lowest elevation in the U.S. at 282 feet below sea level, is only 76
+        miles from Mount Whitney, the highest point in the contiguous U.S. at 14,505 feet.</li>
+    <li> The Grand Canyon is both a record of history and source of mystery. The Colorado River running through the canyon
+        cuts through metamorphic rock called schist, which is about 1.75 billion years old. However the beginnings of the
+        canyon are much debated by scientists. Did the Colorado River carve the whole canyon or was there already an
+        ancient gorge waiting for the new river over 5 million years ago?</li>
+    <li>Crater Lake, the U.S.’ deepest lake and seventh deepest in the world, took 250 years of rain and snow accumulation
+        to reach its current water level.</li>
+    <li>The Yellowstone Caldera, in Yellowstone National Park, is a super volcano that is responsible for three of the
+        world’s six biggest volcano eruptions. It is on pace to blow about 100,000 years from now. So come see
+        it while you still can!</li>
+</ul>
+
+    <h3>YellowStone National Park</h3>
+<ul class="infoFacts">
+    <li>Yellowstone National Park is named after the Yellowstone River, the major river running through the park.</li>
+    <li>Is Yellowstone the largest national park?
+        No. More than half of Alaska’s national park units are larger, including Wrangell–St. Elias National Park and Preserve,
+        which is the largest unit (13 million acres) in the National Park System.</li>
+    <li>Yellowstone National Park is 3,472 square miles which includes over 1,000 miles of trails, 52 picnic areas,
+        and 900 historic buildings and over 200 waterfalls.</li>
+    <li>Yellowstone is in the top five national parks for number of recreational visitors. Great Smoky Mountains National
+        Park often has the most. Visit https://irma.nps.gov/Stats/ to view up-to-date statistics for all national parks.</li>
+</ul>
+    <h3>Zion National Park</h3>
+<ul class="infoFacts">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+    <h3>Grand Canyon Nationl Park</h3>
+<ul class="infoFacts">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<button id="highlight">Highlight</button>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+</script>
+<script>
+    "use strict";
+
+    (function (){
+
+    $("#highlight").on("click", highlightAllLastItems);
+        function highlightAllLastItems() {
+            $("ul").each(highlightLastListItem);
+        }
+
+        function highlightLastListItem() {
+            $(this).children().last().css("background-color", "yellow");
+        }
+
+        $("ul").on("click", makeAllListItemsBold);
+        function makeAllListItemsBold() {
+            $(this).css("font-weight", "bold");
+        }
+
+        $("li").on("click", makeFirstSiblingBlue);
+        function makeFirstSiblingBlue() {
+            $(this).parent().children().first().css("color", "blue");
+        }
+
+        $("#letsHide").on("click", faqList);
+
+
+        function faqList() {
+        var $list = $(this).hide();
+        $list.slideUp();
+        }
+
+        $("#header").on("click", hideTheNext);
+
+        function hideTheNext() {
+            var $header = $(this).next();
+            $header.slideToggle();
+        }
+
+        var facts = $(".infoFacts");
+        facts.hide();
+
+        facts.prev().click(function() {
+            $(this).next().slideToggle();
+        });
+
+        setTimeout(function() {
+            $("#register").fadeIn();
+            }, 3000);
+    }());
+
+
+
+
+</script>
+
+
+</body>
+</html>

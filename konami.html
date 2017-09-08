@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--<html>-->
+<!--<head>-->
+    <!--<title>Konami Code</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Konami Code</h1>-->
+
+<!--<form>-->
+    <!--<input type="text" id="textfield" name="textfield" placeholder="Type Here"/>-->
+<!--</form>-->
+
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+</script>
+
+
+<!--&lt;!&ndash;<script src="/js/jquery.js"></script>&ndash;&gt;-->
+<!--<script>-->
+    <!--"use strict";-->
+    <!--(function(){-->
+
+
+    <!--$(document).keyup(function(event){-->
+        <!--console.log(event.keyCode);-->
+    <!--});-->
+
+<!--var keys = [];-->
+<!--var code = [38, 38, 40, 37, 39, 37, 39, 66, 65, 13];-->
+
+    <!--})();-->
+
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+<html>
+<head>
+    <title>Whats up!!</title>
+
+    <style type="text/css">
+        .babySize {
+            position: absolute;
+            width:100%;
+            height:100%;
+            z-index:999999;
+        }
+        .babySize img {
+            width:100%;
+            height:100%;
+
+
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            var keys = [];
+            // Up-Up-Down-Down-Left-Right-Left-Right-b-a-<Enter>
+            var code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+
+            $("#baby-container").hide();
+
+            $(document).keydown(function(keyEvent) {
+
+                keys.push(keyEvent.keyCode);
+
+
+                if ( keys.length > code.length ) {
+                    keys.shift();
+                }
+
+                if ( keys.toString() === code.toString() ) {
+                    $('#baby-container').slideDown('slow');
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="baby-container" class="babySize">
+    <img src="images/laughingBaby.gif" >
+</div>
+
+<h1>What's Up!!</h1>
+<p>Try typing the 'konami code':</p>
+<p><strong>Up-Up-Down-Down-Left-Right-Left-Right-b-a-&lt;Enter&gt;</strong></p>
+
+</body>
+</html>

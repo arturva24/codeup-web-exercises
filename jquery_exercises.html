@@ -15,29 +15,62 @@
             <p>
                 Lorem ipsum dolor sit amet, incididunt ut <span class="important">labore et dolore magna aliqua.</span>, quis ut aliquip ex ea commodo.
             </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus expedita quos tempore totam ut vitae? Beatae illo, optio?
+                Aliquam aut dignissimos dolores, ea eaque natus omnis qui sapiente voluptates?
+            </p>
         </div>
         <p class="important">This class starts at 9 am.  Make sure to be here on time.</p>
 
         <ul id="whatColor"> What color is your cup right now?
-            <li>red</li>
-            <li>yellow</li>
-            <li>green</li>
+            <li id="1">Red</li>
+            <li id="2">Yellow</li>
+            <li id="3">Green</li>
         </ul>
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
         <script>
             "use strict";
-//            $(document).ready(function() {
-//                alert("Hi there");
-//            });
-            var title = $("#pageTitle").html();
-            alert("This is the start of the page.");
+            (function () {
+                $('#pageTitle').click(function() {
+                    $(this).css("background-color","#0ff");
 
-            $("#whatColor");
-            $(".important").css("color", "red");
-            $("p").css("font-size", "20px");
+                });
 
+                $("p").dblclick(function() {
+                    $(this).css("font-size", "20px");
+
+                });
+
+                $("#1").hover(function() {
+                    $(this).css("color", "red");
+
+                    },
+
+                    function() {
+                    $(this).css("color", "black");
+                });
+                $("#2").hover(function() {
+                        $(this).css("color", "yellow");
+
+                    },
+
+                    function() {
+                        $(this).css("color", "black");
+                    }
+                );
+                $("#3").hover(function() {
+                        $(this).css("color", "green");
+
+                    },
+
+                    function() {
+                        $(this).css("color", "black");
+                    }
+                );
+
+            })();
 
         </script>
     </body>
