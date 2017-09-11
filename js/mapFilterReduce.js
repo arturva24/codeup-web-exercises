@@ -35,11 +35,13 @@ const users = [
 console.log(users);
 
 //Filter
+
 let certainField = users.filter(users => users.languages.length >= 3);
 console.log(certainField);
 
 
 //Map
+
 function userEmail(user, option) {
     return user.email
 }
@@ -55,10 +57,6 @@ let totalUsers = users.reduce((everyone, user) => {
     return everyone;
 }, {});
 console.log(totalUsers);
-//
-// let totalUsers = users.reduce((accumulation, everyone) => {
-//     return accumulation + everyone;
-// }, );
 
 
 // let result = {
@@ -68,8 +66,4 @@ console.log(totalUsers);
 //     4: "fernando",
 //     5: "justin"
 // };
-
-// let allUsers = result.reduce ((accumulation, everyone)=> {
-//     return accumulation + everyone;
-// }, 0);
 
